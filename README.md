@@ -1,1 +1,1 @@
-# command line exercise
+# This is our not so awesome command line exercises

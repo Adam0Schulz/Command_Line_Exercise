@@ -243,7 +243,7 @@ echo "ditch identity nerve regret medal" >> nerve.txt && copy nerve.txt interfer
 
 79: create a file called difficulty.txt and rename it so that it's called architecture.txt instead. Hint: This should be done in 2 commands
 ni difficulty.txt
-mv difficulty.txt architercture.txt
+mv difficulty.txt architecture.txt
 
 80: create two directories medal and pray and move into pray
 mkdir medal, pray && cd pray
@@ -549,7 +549,7 @@ echo "rain speculate hill ditch on" >> $FILE
 whoami
 
 179: write something in a file called correspondence.txt
-echo "something" >> corresponcence.txt
+echo "something" >> correspondence.txt
 
 180: create a directory nerve and move into the directory
 mkdir nerve && cd nerve
@@ -645,84 +645,126 @@ echo "something" >> regret.txt
 echo "difficulty cousin experienced regret degree" >> $FILE
 
 210: output the full path you are on
-
+resolve-path .
 
 211: echo 'excuse shot difficulty degree pray' into the file
+echo "excuse shot difficulty degree pray" >> $FILE
 
 212: write something in a file called speculate.txt
+echo "something" >> speculate.txt
 
 213: create a directory degree and move into the directory
+mkdir degree && cd degree
 
 214: move two folders up
+cd ../..
 
 215: output the sizes of the files in the directory
+ls -length
 
 216: move two folders up
+cd ../..
 
 217: output hidden files
+ls -Force
 
 218: create a file called surprise.txt and immediately delete it
+ni surprise.txt && del surprise.txt
 
 219: create two directories discover and salvation and move into salvation
+mkdir discover, salvation && cd salvation
 
 220: output the full path you are on
+resolve-path .
 
 221: output hidden files
+ls -Force
 
 222: output hidden files
+ls -Force
 
 223: output the sizes of the files in the directory
+ls -length
 
 224: open a file in the terminal and see the content
+cat $FILE
 
 225: create a file called rain.txt. Put the text 'sister stock stock banish proportion' in it and copy it so there is also a pioneer.txt with same content
+ni rain.txt && echo " sister stock stock banish proportion" >> rain.txt && copy rain.txt pioneer.txt
 
 226: delete the last folder you created
+rmdir $DIR
 
 227: open a file in the terminal and see the content
+cat $FILE
 
 228: write something in a file called rain.txt
+echo "something" >> rain.txt
 
 229: create a file called correspondence.txt
+ni correspondence.txt
 
 230: output who the active user is
+whoami
 
 231: output the sizes of the files in the directory
+ls -length
 
 232: output the full path you are on
+resolve-path .
 
 233: output hidden files
+ls -Force
 
 234: create a file called discover.txt
+ni discover.txt
 
 235: write something in a file called stock.txt
+echo "something" >> stock.txt
 
 236: delete the last folder you created
+rmdir $DIR
 
 237: move one level up
+cd ..
 
 238: create a file called banish.txt and rename it so that it's called recession.txt instead. Hint: This should be done in 2 commands
+ni banish.txt
+mv banish.txt recession.txt
 
 239: output the content of any file in the directory
+cat $FILE
 
 240: open a file in the terminal and see the content
+cat $FILE
 
 241: output the sizes of the files in the directory
+ls -length
 
 242: output the full path you are on
+resolve-path .
 
 243: output who the active user is
+whoami
 
 244: create a file called terminal.txt and immediately delete it
+ni terminal.txt && del terminal.txt
 
 245: create a file called discover.txt. Put the text 'interference support ethics architecture identity' in it and copy it so there is also a surprise.txt with same content
+ni discover.txt && echo "interference support ethics architecture indentity" && cp discover.txt surprise.txt
 
 246: create a file called correspondence.txt and rename it so that it's called identity.txt instead. Hint: This should be done in 2 commands
+ni correnspondence.txt
+mv correspondence.txt identity.txt
 
 247: create a directory salvation and move into the directory
+mkdir salvation && cd salvation
 
 248: move one level up
+cd ..
 
 249: output the full path you are on
+resolve-path .
 
 250: output who the active user is
+whoami

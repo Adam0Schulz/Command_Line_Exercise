@@ -1,0 +1,982 @@
+1: create a file called rain.txt. Put the text 'speculate surprise relative regret evaluate' in it and copy it so there is also a rider.txt with same content 
+//mkdir test 
+//cd test 
+echo "speculate surprise relative regret evaluate" >> rain.txt 
+cat rain.txt 
+Copy-Item "C:\test\rain.txt" -Destination "C:\test\rider.txt" 
+cat rider.txt   
+
+2: create a file called degree.txt. Put the text 'panel sister ditch panel needle' in it and copy it so there is also a support.txt with same content 
+//mkdir test 
+//cd test 
+echo "panel sister ditch panel needle" >> degree.txt 
+cat degree.txt 
+Copy-Item "C:\test\degree.txt" -Destination "C:\test\support.txt" 
+cat support.txt 
+
+3: output what's in the directory 
+//mkdir test 
+//cd test 
+dir 
+
+4: output the content of any file in the directory 
+cat degree.txt  
+
+5: create a file called recession.txt. Put the text 'cater support shot panel excuse' in it and copy it so there is also a shallow.txt with same content 
+//mkdir test 
+//cd test 
+echo "cater support shot panel excuse" >>recession.txt 
+cat shallow.txt 
+Copy-Item "C:\test\shallow.txt" -Destination C:\test\shallow.txt 
+
+6: create a file called excuse.txt 
+//mkdir test 
+//cd test 
+ni excuse.txt  
+
+7: create a directory nerve and move into the directory 
+mkdir nerve 
+cd nerve   
+
+8: output the sizes of the files in the directory 
+cat excuse.txt 
+or  
+Get-ChildItem | Measure-Object -Sum Length | Select-Object Count, Sum  
+
+9: output what's in the directory 
+dir  
+
+10: create a file called appreciate.txt and immediately delete it 
+//mkdir test 
+//cd test 
+ni appreciate.txt 
+cd.. 
+rm appreciate.txt   
+
+11: output the content of any file in the directory 
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Write-Output   
+
+12: echo 'degree ditch ethics excuse rain' into the file 
+echo "degree ditch ethics excuse rain" >> shallow.txt 
+cat shallow.txt   
+
+13: output who the active user is 
+$env:UserName
+
+14: output the content of any file in the directory 
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Write-Output  
+
+15: create two directories banish and pioneer and move into pioneer 
+mkdir banish 
+mkdir pioneer 
+Move-Item banish -Destination pioneer or  Move-Item -path c:\banish -Destination c:\pioneer or mv banish pioneer   
+
+16: delete the last folder you created
+ rm filename.exe
+
+17: output hidden files 
+dir -Forse   
+
+18: create a file called pray.txt and rename it so that it's called hill.txt instead. Hint: This should be done in 2 commands 
+//mkdir test 
+//cd test 
+ni pray.txt 
+Rename-Item -Path "c:\test\pray.txt" -NewName "hill.txt"   
+
+19: create two directories discover and abortion and move into abortion 
+mkdir discover 
+mkdir abortion 
+mv discover abortion 
+//cd abortion 
+//cd dir   
+
+20: output the sizes of the files in the directory 
+cd test 
+Get-ChildItem | Measure-Object -Sum Length | Select-Object Count, Sum  
+
+21: move two folders up 
+cd ./../..   
+
+22: create a directory regret and move into the directory 
+mkdir regret  
+cd regret   
+
+23: output who the active user is 
+$env:UserName 
+
+24: output hidden files 
+dir -Forse   
+
+25: move two folders up 
+cd ./../..   
+
+26: if there are any directories in the folder then move inside any one of them 
+cd c:\test\filename.exe
+
+27: output hidd 
+en files 
+dir -Forse 
+
+28: create a file called recession.txt and immediately delete it 
+//mkdir test 
+//cd test
+ni recession.txt 
+cd .. 
+rm recession.txt  
+
+29: move two folders up 
+cd ./../..  
+
+30: output hidden files 
+dir -Forse   
+
+31: move two folders up 
+./..´/..   
+
+32: create a directory beat and move into the directory 
+mkdir beat 
+cd beat   
+
+33: create a directory cousin and move into the directory 
+mkdir cousin 
+cd cousin  
+
+34: create two directories advice and appreciate and move into appreciate 
+mkdir advice 
+mkdir appreciate 
+mv advice appreciate   
+
+35: output who the active user is 
+$env:UserName
+
+36: delete the last file you created 
+cd.. 
+
+37: open a file in the terminal and see the content 
+cd testrepo
+dir
+cat filename.txt 
+
+38: create a file called pray.txt and rename it so that it's called degree.txt instead. Hint: This should be done in 2 commands 
+//mkdir test 
+// cd test 
+ni pray.txt 
+Rename-Item -path "c:\test\pray.txt" -NewName "degree.txt"   
+
+39: create two directories rider and relative and move into relative 
+mkdir rider 
+mkdir relative 
+mv rider relative  
+
+40: create two directories relative and hill and move into hill 
+mkdir relative 
+mkdir hill 
+mv relative hill   
+
+41: write something in a file called rider.txt 
+//mkdir test 
+//cd test 
+echo "I am writing something now" >>rider.txt 
+cat rider.txt   
+
+42: create a directory degree and move into the directory 
+mkdir degree 
+mkdir move 
+mv degree move   
+
+43: create two directories banish and pen and move into pen 
+mkdir banish 
+mkdir pen 
+mv banish pen 
+  
+44: create a file called stock.txt 
+//mkdir test 
+//cd test 
+ni stock.txt  
+
+45: create a file called ditch.txt and rename it so that it's called relative.txt instead. Hint: This should be done in 2 commands 
+//mkdir test 
+//cd test 
+ni ditch.txt 
+Rename-Item -path "c:\test\ditch.txt" -NewName "relative.txt"  
+
+46: echo 'appreciate stock cousin ethics correspondence' into the file 
+//cd test 
+//dir 
+//cat relative.txt 
+echo "appreciate stock cousin ethics correspondence" >> relative.txt 
+cat relative.txt  
+
+47: output hidden files 
+dir -Fourse  
+
+48: delete the last folder you created   
+rm filename.exe
+49: delete the last folder you created  
+rm filename.exe
+
+50: output the content of any file in the directory 
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+51: open a file in the terminal and see the content 
+cat relative.txt  
+
+52: output the full path you are on 
+$pwd 
+  
+53: if there are any directories in the folder then move inside any one of them 
+cd c:\test\testfile.exe  
+
+54: output the full path you are on 
+$pwd  
+
+55: create a file called relative.txt and immediately delete it 
+mkdir relative.txt 
+rm relative.txt   
+
+56: output who the active user is 
+$env:UserName
+
+57: create a file called sister.txt. Put the text 'nerve rider panel stock abortion' in it and copy it so there is also a interference.txt with same content 
+//mkdir test 
+//cd test 
+echo "nerve rider panel stock abortion" >> sister.txt 
+Copy-Item c:\test\sister.txt -Destination c:\test\interference.txt   
+
+58: create a file called identity.txt and immediately delete it 
+mkdir identity.txt 
+rm identity.txt  
+
+59: write something in a file called recommend.txt 
+//mkdir test 
+//cd test 
+echo "writing something" >> recommend.txt 
+cat recommend.txt   
+
+60: move two folders up 
+cd ./../.. 
+
+61: create a file called discover.txt and immediately delete it 
+mkdir disvover.txt 
+rm discover.txt 
+
+62: write something in a file called proportion.txt 
+//mkdir test 
+// cd test 
+echo "I am writing now" >> proportion.txt   
+
+63: output hidden files 
+dir -Forse   
+
+64: create a file called stock.txt and rename it so that it's called proportion.txt instead. Hint: This should be done in 2 commands 
+//mkdir test 
+//cd test 
+ni stock.txt 
+Rename-Item -path "c:\test\stock.txt" -NewName "proportion.txt"   
+
+65: create a directory excuse and move into the directory 
+mkdir excuse 
+cd excuse 
+
+66: output the sizes of the files in the directory 
+cd test 
+Get-ChildItem | Measure-Object -Sum Length | Select-Object Count, Sum 
+
+67: write something in a file called discover.txt 
+echo "I am writing" >> discover.txt 
+cat disvover.txt   
+
+68: if there are any directories in the folder then move inside any one of them 
+cd c:\test\testfile.exe
+
+69: create two directories evaluate and beat and move into beat 
+mkdir evaluate 
+mkdir beat 
+mv evaluate beat 
+
+70: if there are any directories in the folder then move inside any one of them 
+cd c:\test\testfile.exe
+
+71: open a file in the terminal and see the content 
+cd testrepo
+dir
+cat filename.txt 
+
+or
+
+Get-Content c:\testrepo\filename.txt ???? 
+
+
+72: delete the last file you created 
+rm filename.exe
+
+73: delete the last folder you created 
+rm filename.exe 
+
+74: move one level up 
+cd.. 
+
+75: write something in a file called salvation.txt 
+echo "WRITE SOMETHING" >> salvation.txt 
+cat salvation.txt 
+
+76: echo 'identity evaluate experienced responsibility support' into the file 
+//mkdir test 
+//cd test 
+echo "identity evaluate experienced responsibility support" salvation.txt 
+cat salvation.txt 
+
+77: write something in a file called correspondence.txt 
+echo "Somthing" >> correspondence.txt 
+cat correspondence.txt 
+
+78: move one level up 
+cd.. 
+
+79: output what's in the directory 
+dir 
+
+80: create a file called plane.txt and rename it so that it's called interference.txt instead. Hint: This should be done in 2 commands 
+//mkdir test 
+//cd test 
+ni plane.txt 
+Rename-Item -path "c:\test\plane.txt" -NewName "interference.txt"   
+
+81: create a file called identity.txt. Put the text 'proportion advice hill pray rider' in it and copy it so there is also a excuse.txt with same content 
+//mkdir test 
+//cd test 
+echo "proportion advice hill pray rider" >> identity.txt 
+cat identity.txt 
+Copy-Item "c:\test\identity.txt" -Destination "c:\test\excuse.txt" 
+cat excuse.txt 
+
+82: create a file called shot.txt and immediately delete it 
+mkdir shot.txt 
+rm shot.txt  
+
+83: output who the active user is 
+$env:UserName
+
+84: write something in a file called ethics.txt 
+echo "writing now" >> ethics.txt 
+cat ethics.txt   
+
+85: if there are any directories in the folder then move inside any one of them 
+cd c:\test\testfile.exe
+
+86: move one level up 
+cd.. 
+
+87: create two directories architecture and hill and move into hill 
+mkdir architecture 
+mkdir hill 
+mv architecture hill  
+
+88: create a file called support.txt 
+ni support.txt 
+
+89: output hidden files 
+dir -Forse 
+
+90: delete the last folder you created 
+rm filename.exe
+
+91: output the content of any file in the directory 
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+92: move one level up 
+cd.. 
+
+93: create a file called pioneer.txt 
+ni pioneer.txt   
+
+94: create a file called recession.txt. Put the text 'identity nerve nerve architecture pen' in it and copy it so there is also a shot.txt with same content 
+//mkdir test 
+//cd test 
+echo "identity nerve nerve architecture pen" >> recession.txt 
+cat recession.txt 
+Copy-Item "c:\test\recession.txt" -Destination "c:\test\shot.txt" 
+
+95: create a file called interference.txt and rename it so that it's called evaluate.txt instead. Hint: This should be done in 2 commands 
+//mkdir test 
+//cd test 
+ni interference.txt 
+Rename-Item -path "c:\test\interference.txt -NewName" c:\"evaluate.txt" 
+
+96: create a directory correspondence and move into the directory 
+mkdir correspondence 
+cd correspondence 
+
+97: create two directories degree and experienced and move into experienced 
+mkdir degree 
+mkdir experienced 
+mv degree experienced  
+
+98: open a file in the terminal and see the content 
+cd testrepo
+dir
+cat filename.txt 
+
+99: delete the last file you created 
+rm filename.txt
+
+100: output what's in the directory 
+dir 
+ 
+101: create a file called abortion.txt. Put the text 'abortion cater architecture rider rider' in it and copy it so there is also a on.txt with same content
+//mkdir test
+// cd test
+echo "abortion cater architecture rider rider" >> abortion.txt
+cat abortion.txt
+Copy-Item "c:\test\abortion.txt" -Destination "c:\test\on.txt"
+cat on.txt
+
+102: output the sizes of the files in the directory
+cd test 
+Get-ChildItem | Measure-Object -Sum Length | Select-Object Count, Sum 
+
+103: open a file in the terminal and see the content
+cd testrepo
+dir
+cat filename.txt 
+
+104: delete the last file you created
+rm filename.txt
+
+105: if there are any directories in the folder then move inside any one of them
+cd c:\test\testfile.exe
+
+106: move one level up
+cd..
+
+107: create two directories stock and recommend and move into recommend
+mkdir stock
+mkdir recommend
+mv stock recommend
+
+108: create two directories honor and experienced and move into experienced
+mkdir honor 
+mkdir experienced
+mv honor experienced
+
+109: create a directory nerve and move into the directory
+mkdir nerve
+cd nerve
+
+110: output who the active user is
+$env:UserName
+
+111: echo 'shallow degree excuse medal ethics' into the file
+mkdir test
+cd test
+echo "shallow degree excuse medal ethics" >> 
+
+112: move one level up
+cd..
+
+113: move one level up
+cd..
+
+114: output the sizes of the files in the directory
+cd test
+Get-ChildItem | Measure-Object -Sum Length | Select-Object Count, Sum 
+
+115: create a file called difficulty.txt and rename it so that it's called ditch.txt instead. Hint: This should be done in 2 commands
+//mkdir test
+//cd test
+ni difficulty.txt
+Rename-item -path "c:\test\difficulty.txt" -NewName "ditch.txt"
+
+116: output hidden files
+dir -Forse
+
+117: create a file called identity.txt
+ni identity.txt
+
+118: delete the last folder you created
+rm filename.exe
+
+119: create a file called appreciate.txt
+ni appreciate.txt
+
+120: create two directories degree and speculate and move into speculate
+mkdir degree
+mkdir speculate
+mv degree speculate
+
+121: create a file called terminal.txt and immediately delete it
+ni terminal.txt
+cd..
+rm terminal.txt
+
+122: move two folders up
+cd ./../..   
+
+123: move one level up
+cd..
+
+124: delete the last file you created
+rm filename.exe
+
+125: write something in a file called speculate.txt
+echo "writing" >> speculate.txt
+
+126: write something in a file called advice.txt
+echo "I'm still doing the question 126" >> advice.txt
+
+127: create a directory regret and move into the directory
+mkdir regret
+cd regret
+
+128: delete the last folder you created
+delete filename.exe
+
+129: write something in a file called depression.txt
+echo "creating a file" >> depression.txt
+
+130: create a file called salvation.txt. Put the text 'ditch banish identity needle appreciate' in it and copy it so there is also a hill.txt with same content
+//mkdir test
+//cd test
+echo "ditch banish identity needle appreciate" salvation.txt
+Copy-Item "c:\test\slvation.txt" -Destination "c:\test\hill.txt"
+
+131: output the content of any file in the directory
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+132: output what's in the directory
+dir
+
+133: echo 'correspondence cousin interference degree shallow' into the file
+echo "correspondence cousin interference degree shallow" >> hill.txt
+
+134: open a file in the terminal and see the content
+cd testrepo
+dir
+cat filename.txt 
+
+135: output what's in the directory
+dir
+
+136: move one level up
+cd..
+
+137: delete the last file you created
+???
+
+138: output the content of any file in the directory
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+
+139: output hidden files
+dir -Forse
+
+140: output what's in the directory
+dir
+
+141: output the content of any file in the directory
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+142: delete the last folder you created
+????
+
+143: output the content of any file in the directory
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+144: open a file in the terminal and see the content
+cd testrepo
+dir
+cat filename.txt
+
+145: write something in a file called difficulty.txt
+echo "It's freezing" >> difficulty.txt 
+
+146: output the sizes of the files in the directory
+Get-ChildItem | Measure-Object -Sum Length | Select.Object Count, Sum 
+
+147: output hidden files
+dir -Forse
+
+148: open a file in the terminal and see the content
+cd testrepo
+dir
+cat filename.txt
+
+149: delete the last file you created
+rm filename.txt
+
+150: output the full path you are on
+$pwd
+
+151: create a file called shot.txt
+ni shot.txt
+
+152: create a file called advice.txt. Put the text 'proportion experienced proportion depression support' in it and copy it so there is also a advice.txt with same content
+//mkdir test
+//cd test
+echo "proportion experienced proportion depression support" >> advice.txt
+New-Item "proportion experienced proportion depression support" -Destination "c:\test\advice2.txt"
+
+153: create a file called terminal.txt
+ni terminal.txt
+
+154: output the sizes of the files in the directory
+Get-ChildItem | Measure-Object -Sum Length | Select.Object Count, Sum 
+
+155: output what's in the directory
+dir
+
+156: create a file called medal.txt and rename it so that it's called honor.txt instead. Hint: This should be done in 2 commands
+//mkdir test
+//cd test
+ni medal.txt
+Rename-Item -path "c:\test\medal.txt" -NewName "honor.txt"
+
+157: delete the last file you created
+???
+
+158: create a file called on.txt and rename it so that it's called advice.txt instead. Hint: This should be done in 2 commands
+//mkdir test
+/cd test
+ni on.txt
+Copy-Item -path "c:\test\on.txt" -New-Item "advice.txt"
+
+159: output hidden files
+dir -Forse
+
+160: output hidden files
+dir -Forse
+
+161: delete the last file you created
+rm filename.txt
+
+162: output the full path you are on
+$pwd
+
+163: move one level up
+cd..
+
+164: output the content of any file in the directory
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+165: output who the active user is
+$env:UserName
+
+166: echo 'recession rain excuse evaluate on' into the file
+echo "recession rain excuse evaluate on" >>filename.txt
+
+167: output the full path you are on
+$pwd
+
+168: write something in a file called surprise.txt
+echo "see you soon" >> suprise.txt
+
+169: output hidden files
+dir -Forse
+
+170: output who the active user is
+$env:UserName
+
+171: create a file called advantage.txt and rename it so that it's called panel.txt instead. Hint: This should be done in 2 commands
+//mkdir test
+//cd test
+ni advantage.txt
+Rename-Item -path c:\test\advantage.txt -NewName "panel.txt" 
+
+172: delete the last file you created
+rm filename.txt
+
+173: output the content of any file in the directory
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+174: move two folders up
+cd ./../..
+
+175: move two folders up
+cd ./../..
+
+176: move one level up
+cd..
+
+177: delete the last file you created
+rm filename.txt
+
+178: output the sizes of the files in the directory
+Get-ChildItem | Measure-Object -Sum Length | Select.Object Count, Sum 
+
+179: create a directory recession and move into the directory
+mkdir recession
+cd recession
+
+180: create a file called recommend.txt. Put the text 'identity interference recommend shot shallow' in it and copy it so there is also a ethics.txt with same content
+//mkdir test
+//cd test
+echo "identity interference recommend shot shallow" >> recommend.txt
+Copy-Item "c:\test\recommend.txt" -Destination "c:\test\ethics.txt"
+
+181: output the sizes of the files in the directory
+Get-ChildItem | Measure-Object -Sum Length | Select.Object Count, Sum 
+
+182: output what's in the directory
+dir
+
+183: if there are any directories in the folder then move inside any one of them
+cd c:\test\testfile.exe
+
+184: create a file called stock.txt. Put the text 'appreciate advantage recommend recession ditch' in it and copy it so there is also a salvation.txt with same content
+//mkdir test
+//cd test
+echo "appreciate advantage recommend recession ditch" >> stock.txt
+Copy-Item "c:\test\stock.txt" -Destination "c:\test\salavation.txt"
+
+185: output hidden files
+dir -Forse
+
+186: output hidden files
+dir -Forse
+
+187: create a file called beat.txt
+ni baet.txt
+
+188: open a file in the terminal and see the content
+//mkdir test
+//cd test
+dir
+cat baet.txt
+
+189: echo 'relative proportion speculate recession experienced' into the file
+echo "relative proportion speculate recession experienced" >> baet.txt
+
+190: create a file called relative.txt
+ni relative.txt
+
+191: delete the last file you created
+rm filename.txt
+
+192: create a file called needle.txt
+ni needle.txt
+
+193: create a file called relative.txt. Put the text 'difficulty pioneer on advice difficulty' in it and copy it so there is also a rain.txt with same content
+//mkdir test
+//cd test
+echo "difficulty pioneer on advice difficulty" >> relative.txt
+Copy-Item "c:\test\relative.txt" -Destination "c:\test\rain.txt"
+
+194: output who the active user is
+$env:UserName
+
+195: create a file called needle.txt and rename it so that it's called banish.txt instead. Hint: This should be done in 2 commands
+//mkdir test
+//cd test
+ni needle.txt
+Rename-Item -path "c:\test\neddle.txt" -NewName "banish.txt"
+
+196: output the content of any file in the directory
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+197: create a file called sister.txt and rename it so that it's called recommend.txt instead. Hint: This should be done in 2 commands
+//mkdir test
+//cd test
+ni sister.txt
+Rename-Item -path "c:\test\sister.txt" -NewName "receommend.txt"
+
+198: delete the last file you created
+rm filename.txt
+
+199: if there are any directories in the folder then move inside any one of them
+cd c:\test\testfile.exe
+
+200: output the content of any file in the directory
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+201: open a file in the terminal and see the content
+cd test
+dir
+cat filename.txt
+
+202: create a file called sister.txt and rename it so that it's called interference.txt instead. Hint: This should be done in 2 commands
+//mkdir test
+//cd test
+ni sister.txt
+Rename-Item -path"c:\test\sister.txt" -NewName "interference.txt"
+
+203: output what's in the directory
+dir
+
+204: create a file called correspondence.txt. Put the text 'architecture appreciate salvation proportion recommend' in it and copy it so there is also a difficulty.txt with same content
+//mkdir test
+//cd test
+echo "architecture appreciate salvation proportion recommend" >> correspondence.txt
+Copy-Item "c:\test\correspondence.txt" -Destination "c:\test\difficulty.txt"
+
+205: create a directory recession and move into the directory
+mkdir recession
+cd recession
+
+206: move one level up
+cd..
+
+207: write something in a file called experienced.txt
+echo "Hello" >> experienced.txt
+
+208: create a file called shot.txt and rename it so that it's called appreciate.txt instead. Hint: This should be done in 2 commands
+//mkdir test
+//cd test
+ni shot.txt
+Rename-Item -path "c:\test\shot.txt" -NewName "appreciate.txt"
+
+209: output the content of any file in the directory
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+210: output hidden files
+dir -Forse
+
+211: create two directories correspondence and sister and move into sister
+mkdir correspondence
+mkdir sister
+mv correspondence sister
+
+212: output the content of any file in the directory
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+
+213: if there are any directories in the folder then move inside any one of them
+cd c:\test\testfile.exe
+
+214: write something in a file called pen.txt
+echo "creating one file" >> pen.txt
+
+215: open a file in the terminal and see the content
+cd test
+dir
+cat filename.txt
+
+216: create a file called shot.txt. Put the text 'ditch bay correspondence terminal cater' in it and copy it so there is also a ditch.txt with same content
+//mkdir test
+//cd test
+echo "ditch bay correspondence terminal cater" >> shot.txt
+Copy-Item "c:\test\shot.txt" -Destination "c:\test\ditch.txt"
+
+217: echo 'responsibility hill speculate architecture excuse' into the file
+echo "responsibility hill speculate architecture excuse" >> ditch.txt
+
+218: output the sizes of the files in the directory
+Get-ChildItem | Measure-Object -Sum Length | Select.Object Count, Sum 
+
+219: output what's in the directory
+dir
+
+220: create two directories pray and medal and move into medal
+mkdir pray
+mkdir medal
+mv pray medal
+
+221: create a file called proportion.txt and immediately delete it
+ni proportion.txt
+rm proportion.txt
+
+222: open a file in the terminal and see the content
+cd test
+dir 
+cat filename.txt
+
+223: write something in a file called honor.txt
+echo "clean city" >> honor.txt
+
+224: output the sizes of the files in the directory
+Get-ChildItem | Measure-Object -Sum Length | Select.Object Count, Sum 
+
+225: output the content of any file in the directory
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+226: write something in a file called recommend.txt
+echo "It's sunny day" >> recommend.txt
+
+227: output who the active user is
+$env:UserName
+
+228: create a directory rider and move into the directory
+mkdir rider
+cd rider
+
+229: output the full path you are on
+$pwd
+
+230: create a file called speculate.txt and rename it so that it's called sister.txt instead. Hint: This should be done in 2 commands
+//mkdir test
+//cd test
+ni speculate.txt
+Rename-Item -path "c:\test\speculate.txt" -NewName"sister.txt"
+
+231: open a file in the terminal and see the content
+cd test
+dir 
+cat filename.txt
+
+232: echo 'sister cater architecture degree cater' into the file
+echo "sister cater architecture degree cater" >> filename.txt
+
+233: create a file called speculate.txt
+ni speculate.txt
+
+234: delete the last file you created
+rm filename.txt
+
+235: output the sizes of the files in the directory
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+236: output what's in the directory
+dir
+
+237: create a file called proportion.txt
+ni proprtion.txt
+
+238: create a file called surprise.txt
+ni surprise.txt
+
+239: create a directory evaluate and move into the directory
+mkdir evaluate
+cd evaluate
+
+240: delete the last folder you created
+rm filename.txt
+
+241: create a file called stock.txt and rename it so that it's called support.txt instead. Hint: This should be done in 2 commands
+//mkdir test
+//cd test
+ni stock.txt
+Rename-Item -path"c:\test\stock.txt" -NewItem "support.txt"
+
+242: create a file called experienced.txt and rename it so that it's called bay.txt instead. Hint: This should be done in 2 commands
+//mkdir test
+//cd test
+ni experienced.txt
+Rename-Item -path"c:\test\experienced.txt" -NewItem "bay.txt"
+
+243: create a file called proportion.txt
+ni proportion.txt
+
+244: open a file in the terminal and see the content
+cd test
+dir 
+cat filename.txt
+
+245: write something in a file called on.txt
+echo "Please clean up" >> on.txt
+
+246: delete the last file you created
+rm filename.txt
+
+247: delete the last file you created
+rm filename.txt
+
+248: create two directories experienced and interference and move into interference
+mkdir experienced
+mkdir interference
+mv experienced interference
+
+249: output the sizes of the files in the directory
+dir -Recurse -File C:\test | % {Get-Content $_.FullName} | Writ´-Output  
+
+250: create a file called surprise.txt and immediately delete it
+ni suprise.txt
+rm suprise.txt
